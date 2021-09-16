@@ -1,0 +1,101 @@
+* {
+    background-color: #bebebe;
+    color: #8d012f;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+h1{
+    font-size: 45px;
+    font-weight: bold;
+
+}
+h2 {
+    font-size: 18px;
+}
+
+button {
+    margin: 8px;
+    font-size: 16;
+    cursor: pointer;
+    
+}
+button :hover, 
+:focus{
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 10%);
+    border: 1px solid #dadce0;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scoreboard {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex: 2 2 80px;
+    }
+#heading{
+    align-items: center;
+}
+#RPS {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+   width: 100%;
+}
+#rock{
+    background-image: url(images/rock.jpg);
+    height: 150px;
+    width: 175px;
+    border: black;
+    border-width: 5px;
+}
+#paper{
+    background-image: url(images/paper.jpg);
+    height: 150px;
+    width: 175px;
+    border: black;
+    border-width: 5px;
+}
+#scissors{
+    background-image: url(images/scissors.jpg);
+    height:150px;
+    width: 175px;
+    border: black;
+    border-width: 5px;
+}
+#retry {
+    visibility: hidden;
+    background-color: #8d012f;
+    color: #bebebe;
+    font-weight: bold;
+    height: 65px;
+    width: 75px;
+}
+#player-score, #cpu-score {
+    font-size: 50px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    font-family: scoreboard;
+    align-items: center;
+    padding: 15px 40px 5px 5px;
+    width: 35px;
+    margin-top: -10px;   
+}
+
+.player, .cpu {
+    justify-content: center;
+    margin: 15px;
+    align-self: center;
+}
+
+#description {
+    font-size: 30px;
+}
+@font-face {
+    font-family: scoreboard;
+    src: url(Fonts/CursedTimerUlil-Aznm.ttf);
+}
